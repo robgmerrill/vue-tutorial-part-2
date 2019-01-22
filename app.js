@@ -5,10 +5,11 @@ const meal = new Vue({
       meat: 'Turkey',
       vegetable: 'Green Beans',
       starch: 'Mashed Potatoes',
+      showIngredients: false,
     },
     methods: {
-      sayHi: function() {
-        alert(this.meal);
+      toggleIngredients: function() {
+        this.showIngredients = !this.showIngredients;
       }
     }
 });
